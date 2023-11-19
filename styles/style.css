@@ -16,6 +16,8 @@ html {
   font-family: 'Fira Sans Condensed', sans-serif;
   font-size: 18px;
   background-color: #1b1919;
+  display: flex;
+  align-items: center;
 }
 
 h1,
@@ -35,4 +37,115 @@ fieldset {
 ul,
 ol {
   list-style: none;
+}
+
+.visually-hidden {
+  position: absolute;
+  inline-size: 1px;
+  block-size: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  white-space: nowrap;
+}
+
+.content {
+  display: flex;
+  column-gap: 30px;
+  inline-size: 1200px;
+  align-items: end;
+}
+
+.result {
+  inline-size: 100%;
+  block-size: 100%;
+}
+.result__video-container {
+  position: relative;
+  block-size: 386px;
+  inline-size: 711px;
+  margin-bottom: 16px;
+}
+
+.result__video {
+  position: absolute;
+  inset: 0;
+  inline-size: 100%;
+  block-size: 100%;
+  object-fit: cover;
+}
+
+.search-form {
+  display: flex;
+  justify-content: space-between;
+}
+
+.search-form__fieldset-title {
+  font-size: 18px;
+font-weight: 400;
+margin-bottom: 5px;
+}
+
+.content__details {
+  display: flex;
+  flex-direction: column;
+  gap: 26px;
+  inline-size: 100%;
+  block-size: 100%;
+  
+}
+
+.title {
+  font-family: Oswald;
+font-size: 75px;
+font-weight: 700;
+line-height: 94%;
+text-transform: uppercase;
+}
+
+.content__accent {
+  color: #545050;
+}
+
+.content__list {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  inline-size: 100%;
+  block-size: 298px;
+  overflow: auto;
+}
+
+.content__video-card {
+  display: flex;
+  align-items: flex-start;
+}
+
+.content__video-card-description-container {
+  inline-size: 100%;
+}
+
+.content__video-card-thumbnail {
+  inline-size: 194px;
+  block-size: 103px;
+  object-fit: fill;
+}
+
+.content__card-link {
+  text-decoration: none;
+  color:#fff
+}
+
+.content__video-card-title {
+  font-family: Oswald;
+font-size: 30px;
+font-weight: 700;
+line-height: 100%;
+text-transform: uppercase;
+margin-bottom: 6px;
+}
+
+.search-form__fieldset {
+  border: none;
 }
