@@ -5,6 +5,7 @@
 }
 
 html {
+  margin: auto;
   block-size: 100%;
 }
 
@@ -60,6 +61,7 @@ ol {
   inline-size: 100%;
   block-size: 100%;
 }
+
 .result__video-container {
   position: relative;
   margin-bottom: 16px;
@@ -68,8 +70,6 @@ ol {
 }
 
 .result__video {
-  position: absolute;
-  inset: 0;
   object-fit: cover;
   inline-size: 100%;
   block-size: 100%;
@@ -89,7 +89,7 @@ ol {
 .content__details {
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 26px;
   inline-size: 100%;
   block-size: 100%;
 }
@@ -110,14 +110,14 @@ ol {
   position: relative;
   display: flex;
   flex-direction: column;
-  gap: 30px;
+  gap: 20px;
+  margin-bottom: -4px;
+  margin-left: -4px;
+  padding-bottom: 4px;
+  padding-left: 4px;
   overflow: auto;
-  inline-size: 400px;
+  inline-size: 425px;
   block-size: 300px;
-}
-
-.content__list::-webkit-scrollbar {
-  display: none;
 }
 
 .content__video-card {
@@ -126,12 +126,13 @@ ol {
 }
 
 .content__video-card-description-container {
-  inline-size: 100%;
+  inline-size: 200px;
 }
 
 .content__video-card-thumbnail {
-  inline-size: 194px;
-  block-size: 103px;
+  object-fit: cover;
+  block-size: 105px;
+  inline-size: 195px;
 }
 
 .content__card-link {
@@ -169,6 +170,7 @@ ol {
   inline-size: 225px;
   appearance: none;
 }
+
 .search-form__textfield:active {
   border: 1px solid #fff;
 }
@@ -205,8 +207,10 @@ ol {
 }
 
 .more-button {
+  display: block;
+  margin-top: 10px;
   padding: 5px 0;
-  inline-size: 100%;
+  inline-size: 400px;
 }
 
 .search-form__textfield:focus {
@@ -226,7 +230,7 @@ ol {
   background-color: #fff;
 }
 
-label input:checked ~ .search-form__pseudo-checkbox::before {
+.search-form__checkbox:checked ~ .search-form__pseudo-checkbox::before {
   display: block;
 }
 
